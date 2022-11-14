@@ -21,9 +21,9 @@ const PredictAge = () => {
         <input placeholder="Ex. Emma" onChange={(event)=> {setName(event.target.value)}}/>
 
         <Button variant ="warning" onClick={fetchData}> Predict Age</Button>
-        <h3> Age: {PredictedAge?.age} </h3>
-        <h3> Count: {PredictedAge?.count} </h3>
-        <h3> name: {PredictedAge?.name} </h3>
+        <h5> Age: {PredictedAge?.age} </h5>
+        <h5> Count: {PredictedAge?.count} </h5>
+        <h5> name: {PredictedAge?.name} </h5>
 
     </div>
   )
