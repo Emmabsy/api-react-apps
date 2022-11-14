@@ -5,6 +5,9 @@ This is a react project on how to work with API's In React. There are three reac
 3. Get Excuse API
 
 
+ <img src="./public/api.png" alt="">
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
