@@ -1,4 +1,10 @@
 # Getting Started with Create React App
+This is a react project on how to work with API's In React. There are three react examples in this project
+1. Cat Fact Api
+2. Predict Age API
+3. Get Excuse API
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
