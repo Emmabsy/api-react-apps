@@ -17,13 +17,16 @@ const Excuser = () => {
   return (
     <div>
         <br/>
-         <h3 className="title" style={{color:"Green"}}> 3. I have an Excuse </h3>
+         <h4 className="title" style={{color:"Green"}}> 3. I have an Excuse </h4>
 
-        <Stack gap={2} className="col-md-1 mx-auto">
+        <Stack direction="horizontal" gap={3} className="col-md-3 mx-auto">
             <Button variant="primary" onClick={() => fetchExcuse ("family")}> Family</Button>
+            <div className="vr" />
             <Button variant="success "onClick={() => fetchExcuse ("party")}> Party</Button>
+            <div className="vr" />
             <Button variant="secondary"onClick={() => fetchExcuse ("office")}> Office </Button>
         </Stack> 
+        <br/>
          
 
          <p>{generatedExcuse} </p>

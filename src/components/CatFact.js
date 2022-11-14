@@ -18,8 +18,9 @@ const CatFact = () => {
   return (
     <div>
       
-        <h3 className="title" style={{color:"red"}}> 1. Cat Facts </h3>
+        <h4 className="title" style={{color:"red"}}> 1. Cat Facts </h4>
         <Button variant ="info"on onClick={fetchCatFact}> Generate Cat Fact</Button>
+        <br/>
         <p> {catFact} </p>
     </div>
   )

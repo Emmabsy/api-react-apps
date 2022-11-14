@@ -6,7 +6,7 @@ import PredictAge from './components/PredictAge';
 function App() {
   return (
     <div className="App">
-       <h1 className="title" style={{color:"purple"}}> Fetching APIs in React </h1>
+       <u> <h3 className="title" style={{color:"purple"}}> Fetching APIs in React </h3> </u>
       <CatFact/>
       <PredictAge/>
       <Excuser/>

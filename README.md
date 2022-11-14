@@ -1,5 +1,5 @@
  # Getting Started with Create React App
- <img src="./public/api.png" alt="">
+ <img src="./public/ap.png" alt="">
 
 This is a react project on how to work with API's In React. There are three react examples in this project
 1. Cat Fact Api

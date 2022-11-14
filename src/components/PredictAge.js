@@ -1,6 +1,6 @@
 import { useState} from "react";
 import Axios from "axios";
-import {Button} from 'react-bootstrap';
+import {Button, Stack} from 'react-bootstrap';
 
 const PredictAge = () => {
     const [name, setName] =useState("");
@@ -17,13 +17,17 @@ const PredictAge = () => {
   return (
     <div>
         <br/>
-         <h3 className="title" style={{color:"Blue"}}> 2. Predicting Age </h3>
-        <input placeholder="Ex. Emma" onChange={(event)=> {setName(event.target.value)}}/>
+         <h4 className="title" style={{color:"Blue"}}> 2. Predicting Age </h4>
+        <Stack direction="horizontal" gap={3} className="col-md-3 mx-auto" >
+          <input placeholder="Ex. Emma" onChange={(event)=> {setName(event.target.value)}}/> 
+           
+          <Button variant ="warning" onClick={fetchData}> Predict Age</Button>
 
-        <Button variant ="warning" onClick={fetchData}> Predict Age</Button>
-        <h5> Age: {PredictedAge?.age} </h5>
-        <h5> Count: {PredictedAge?.count} </h5>
-        <h5> name: {PredictedAge?.name} </h5>
+        </Stack>
+        
+        <p> Name: {PredictedAge?.name} </p>
+        <p> Count: {PredictedAge?.count} </p>
+        <p> Age: {PredictedAge?.age} </p>
 
     </div>
   )
